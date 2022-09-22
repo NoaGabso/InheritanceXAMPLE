@@ -12,6 +12,10 @@ namespace InheritanceXAMPLE
         {
             this.underWater = underWater;
         }
+        public void addmilk(int litter)
+        {
+            this.milk = this.milk * litter * 1.10;
+        }
 
     }
 }

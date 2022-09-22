@@ -6,7 +6,7 @@ namespace InheritanceXAMPLE
 {
     public class Mammels:Animals
     {
-        private double milk;
+        protected double milk;
 
         public Mammels(double milk, string type, double weight, string name):base(type, weight, name)
         {
