@@ -27,7 +27,7 @@ namespace InheritanceXAMPLE
             return PR;
         }
 
-        public bool IsSuare(int side1, int side2)
+        public bool IsSuare(int side1, int side2):base(4, "square")
         {
             this.side1 = side1;
             this.side2 = side2;
