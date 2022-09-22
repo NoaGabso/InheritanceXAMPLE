@@ -7,7 +7,6 @@ namespace InheritanceXAMPLE
     internal class Polygon:Shapes
     {
         protected int amountofsides;
-
         public Polygon(int amountofsides, string shapename):base(shapename)
         {
             this.amountofsides = amountofsides;

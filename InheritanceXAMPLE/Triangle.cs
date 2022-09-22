@@ -6,13 +6,29 @@ namespace InheritanceXAMPLE
 {
     internal class Triangle:Polygon
     {
-        private int ST;
-        private int PT;
-
-        public Triangle(int S, int P, int amountofsides,string shapename):base(amountofsides, shapename)
+        private int side1;
+        private int side2;
+        private int base1;
+        private int high;
+       
+        public Triangle(int side1, int side2, int base1, int high):base(3, "Triangle")
         {
-            this.ST = S;
-            this.PT = P;
+           this.side1 = side1;
+            this.side2 = side2; 
+            this.base1 = base1; 
+            this.high = high;
+        }
+
+        public int GetST()
+        {
+            int ST = (this.base1 * this.high) / 2;
+            return ST;
+        }
+
+        public int GetPT()
+        {
+            int PT = side1+side2+base1;
+            return PT;
         }
     }
 }
